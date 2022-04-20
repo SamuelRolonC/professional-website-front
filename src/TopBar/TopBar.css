@@ -1,0 +1,17 @@
+.TopBar {
+    overflow: auto;
+}
+.TopBar ul {
+    list-style-type: none;
+    margin: 0;
+}
+.TopBar li {
+    /* display: block; */
+    float: left;
+    margin: 0 5px;
+    color: white;
+}
+
+.TopBarSections {
+    margin: 0 auto;
+}
