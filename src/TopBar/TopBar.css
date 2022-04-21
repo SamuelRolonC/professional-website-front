@@ -1,17 +1,56 @@
 .TopBar {
+    width: inherit;
+    background-color: #2a2525;
     overflow: auto;
+    position: fixed;
+    top: 0;
+    padding-top: 15px;
 }
-.TopBar ul {
-    list-style-type: none;
-    margin: 0;
+
+.TopBar h1 {
+    color: #f2f2f2;
+    margin: 0 auto;
+    width: fit-content;
 }
-.TopBar li {
-    /* display: block; */
-    float: left;
-    margin: 0 5px;
-    color: white;
+
+.TopBarHead {
+    position: relative;
+}
+
+.TopBarMedia {
+    width: fit-content;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.TopBarMedia a {
+  text-decoration: none;
+  margin: auto 5px;
 }
 
 .TopBarSections {
-    margin: 0 auto;
+  overflow: hidden;
+  /* background-color: #333; */
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.TopBarSections a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.TopBarSections a:hover {
+  /* background-color: #ddd; */
+  color: #2e4ba9;
+}
+
+.TopBarSections a.active {
+  background-color: #04AA6D;
+  color: white;
 }

@@ -2,6 +2,7 @@ import logo from '../logo.svg';
 import './App.css';
 import { AboutMe } from '../AboutMe';
 import { TopBar } from '../TopBar';
+import { Footer } from '../Footer';
 
 function AppUI() {
   return (
@@ -24,9 +25,7 @@ function AppUI() {
       <main>
         <AboutMe />
       </main>
-      <footer>
-        Pie
-      </footer>
+      <Footer />
     </div>
   );
 }

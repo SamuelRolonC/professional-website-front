@@ -1,11 +1,21 @@
 .AboutMeContainer {
     background-color: #858787;
     text-align: left;
-    margin: 10px 20px;
+    margin: 10px 0;
     overflow: auto;
     padding: 15px 20px;
 }
 
 .AboutMeTitle {
     margin: 0;
+}
+
+.Tools {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.Tools img {
+    height: 150px;
+    width: 150px;
 }

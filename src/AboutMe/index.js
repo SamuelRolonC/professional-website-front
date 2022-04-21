@@ -1,5 +1,6 @@
 import React from "react";
 import "./AboutMe.css";
+import logo from '../logo.svg';
 
 function AboutMe() {
     const aboutMeText = "I'm a web developer in a software consultancy company, HS " +
@@ -10,6 +11,14 @@ function AboutMe() {
             <div className="AboutMeContainer">
                 <h2 className="AboutMeTitle">Hi, I'm Samuel</h2>
                 <p>{aboutMeText}</p>
+            </div>
+            <div className="Tools">
+                <img src={logo} alt="tool"></img>                
+                <img src={logo} alt="tool"></img>                
+                <img src={logo} alt="tool"></img>                
+                <img src={logo} alt="tool"></img>                
+                <img src={logo} alt="tool"></img>                
+                <img src={logo} alt="tool"></img>                
             </div>
         </div>
     );
