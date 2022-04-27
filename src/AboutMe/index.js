@@ -1,6 +1,7 @@
 import React from "react";
 import "./AboutMe.css";
 import logo from '../logo.svg';
+import { CustomIcon } from "../CustomIcon";
 
 function AboutMe() {
     const aboutMeText = "I'm a web developer in a software consultancy company, HS " +
@@ -13,12 +14,11 @@ function AboutMe() {
                 <p>{aboutMeText}</p>
             </div>
             <div className="Tools">
-                <img src={logo} alt="tool"></img>                
-                <img src={logo} alt="tool"></img>                
-                <img src={logo} alt="tool"></img>                
-                <img src={logo} alt="tool"></img>                
-                <img src={logo} alt="tool"></img>                
-                <img src={logo} alt="tool"></img>                
+                <CustomIcon type="csharp" />
+                <CustomIcon type="dotnet" color="#f2f2f2"/>
+                <CustomIcon type="js" />
+                <CustomIcon type="git" />
+                <CustomIcon type="oracle" />
             </div>
         </div>
     );
