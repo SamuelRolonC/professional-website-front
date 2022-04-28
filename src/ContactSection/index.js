@@ -6,16 +6,16 @@ function ContactSection() {
         e.preventDefault();
 
         let data = {
-            name: this.state.name,
-            email: this.state.email,
-            message: this.state.message
+            name: e.target.name.value,
+            email: e.target.email.value,
+            message: e.target.message.value
         }
 
-        alert(data);
+        alert(JSON.stringify(data));
     }
 
     return (
-        <div className="ContactSection">
+        <div id="contact" className="ContactSection">
             <h2>Contact</h2>
             
             <div className="ContactSectionContainer">
@@ -25,8 +25,8 @@ function ContactSection() {
                         <input id="name" name="name"></input>
                     </div>
                     <div className="ContactSectionField">
-                        <label htmlFor={"mail"}>Mail</label>
-                        <input id="mail" name="mail"></input>
+                        <label htmlFor={"email"}>Email</label>
+                        <input id="email" name="email"></input>
                     </div>
                     <div className="ContactSectionField">
                         <label htmlFor={"message"}></label>

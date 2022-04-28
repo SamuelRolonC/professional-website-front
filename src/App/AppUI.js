@@ -1,4 +1,3 @@
-import logo from '../logo.svg';
 import './App.css';
 import { AboutMe } from '../AboutMe';
 import { TopBar } from '../TopBar';

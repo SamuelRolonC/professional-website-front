@@ -1,5 +1,5 @@
 .AboutMeContainer {
-    background-color: #858787;
+    background-color: #d6d4d4;
     text-align: left;
     margin: 10px 0;
     overflow: auto;
@@ -11,11 +11,11 @@
 }
 
 .Tools {
-    width: 300px;
+    width: 400px;
     margin: 0 auto;
 }
 
-.Tools img {
-    height: 100px;
-    width: 100px;
+.Tools span {
+    display: inline-block;
+    margin: 10px;
 }

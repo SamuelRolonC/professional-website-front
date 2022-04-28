@@ -1,7 +1,7 @@
 .WorkItemContainer {
     background-color: #d6d4d4;
     text-align: left;
-    padding: 10px;
+    padding: 15px;
     margin: 10px 0;
 }
 
@@ -18,9 +18,6 @@
 }
 .WorkItemUrl:hover {
     color: blue;
-}
-
-.WorkItemPosition {
 }
 
 .WorkItemLocation,

@@ -7,7 +7,7 @@ function WorkSection() {
     const [ workItems, error ] = getWorkItems();
 
     return (
-        <div className="WorkSection">
+        <div id="work" className="WorkSection">
             <h2>Work</h2>
 
             {workItems.map(item => (

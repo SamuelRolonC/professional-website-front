@@ -1,0 +1,30 @@
+.ProyectItemContainer {
+    background-color: #d6d4d4;
+    text-align: left;
+    padding: 25px;
+    margin: 10px;
+    width: 40%;
+    display: inline-block;
+}
+
+.ProyectItemTitle {
+    color: black;
+    font-size: 1.3em;
+    margin: 0;
+}
+
+.ProyectItemUrl {
+    text-decoration: none;
+    color: black;
+}
+.ProyectItemUrl:hover {
+    color: #2e4ba9;
+}
+
+.ProyectItemContainer img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1/1;
+    margin: 10px 0;
+    border-radius: 4px;
+}
