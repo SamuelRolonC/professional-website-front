@@ -26,26 +26,62 @@ i18n
     },
 
     resources: {
-        en: {
-            translation: {
-                topbar: {
-                    aboutMe: 'About me',
-                    work: 'Work',
-                    proyects: 'Proyects',
-                    contact: 'Contact'
-                }
-            }
-        },
-        es: {
-            translation: {
-                topbar: {
-                    aboutMe: 'Sobre mí',
-                    work: 'Trabajo',
-                    proyects: 'Proyectos',
-                    contact: 'Contacto'
-                }
-            }
+      en: {
+        translation: {
+          section: {
+            aboutMe: 'About me',
+            work: 'Work',
+            proyects: 'Proyects',
+            contact: 'Contact',
+          },
+          topbar: {
+            english: 'English',
+            spanish: 'Spanish'
+          },
+          contact: {
+            name: 'Name',
+            email: 'Email',
+            messagePlaceholder: 'Write your message...',
+            send: 'Send'
+          },
+          months: {
+            january: 'January', february: 'February', march: 'March', april: 'April', may: 'May',
+            june: 'June', july: 'July', august: 'August', september: 'September', october: 'October',
+            november: 'November', december: 'December'
+          },
+          work: {
+            present: 'Present'
+          }
         }
+      },
+      es: {
+        translation: {
+          section: {
+            aboutMe: 'Sobre mí',
+            work: 'Trabajo',
+            proyects: 'Proyectos',
+            contact: 'Contacto',
+          },
+          topbar: {
+            english: 'Inglés',
+            spanish: 'Español'
+          },
+          contact: {
+            name: 'Nombre',
+            email: 'Correo electrónico',
+            messagePlaceholder: 'Escribí tu mensaje...',
+            send: 'Enviar'
+          },
+          months: {
+            january: 'Enero', february: 'Febrero', march: 'Marzo', april: 'Abril', may: 'Mayo',
+            june: 'Junio', july: 'Julio', august: 'Agosto', september: 'Septiembre', october: 'Octubre',
+            november: 'Noviembre', december: 'Diciembre'
+          },
+          work: {
+            present: 'Presente'
+          } 
+        }
+      }
     }
   });
 

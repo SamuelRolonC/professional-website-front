@@ -1,8 +1,9 @@
 .WorkItemContainer {
-    background-color: #d6d4d4;
+    background-color: #e6e6e6;
     text-align: left;
     padding: 15px;
     margin: 10px 0;
+    border-radius: 4px;
 }
 
 .WorkItemTitle {

@@ -1,7 +1,10 @@
 import React from "react";
 import "./ContactSection.css";
+import { useTranslation } from 'react-i18next';
 
 function ContactSection() {
+    const { t } = useTranslation();
+
     const onSubmit = (e) => {
         e.preventDefault();
 
@@ -16,23 +19,28 @@ function ContactSection() {
 
     return (
         <div id="contact" className="ContactSection">
-            <h2>Contact</h2>
+            <h2>{t('section.contact')}</h2>
             
             <div className="ContactSectionContainer">
                 <form onSubmit={onSubmit}>
                     <div className="ContactSectionField">
-                        <label htmlFor={"name"}>Name</label>
+                        <label htmlFor={"name"}>{t('contact.name')}</label>
                         <input id="name" name="name"></input>
                     </div>
                     <div className="ContactSectionField">
-                        <label htmlFor={"email"}>Email</label>
+                        <label htmlFor={"email"}>{t('contact.email')}</label>
                         <input id="email" name="email"></input>
                     </div>
                     <div className="ContactSectionField">
                         <label htmlFor={"message"}></label>
-                        <textarea id="message" name="message" placeholder="Message..." rows={10}></textarea>
+                        <textarea 
+                            id="message" 
+                            name="message" 
+                            placeholder={t('contact.messagePlaceholder')} 
+                            rows={10}>
+                        </textarea>
                     </div>
-                    <button type="submit">Send</button>
+                    <button type="submit">{t('contact.send')}</button>
                 </form>
             </div>
         </div>

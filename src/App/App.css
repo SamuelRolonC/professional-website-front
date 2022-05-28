@@ -1,11 +1,3 @@
-.App {
-  width: 800px;
-  text-align: center;
-  background-color: #2a2525;
-  margin: 0 auto;
-  padding: 15px 20px 5px 20px;
-}
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -42,9 +34,9 @@
 }
 
 .App main {
-  margin-top: 100px;
-}
-
-html {
-  scroll-padding-top: 100px;
+  width: 800px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 90px;
+  padding: 15px 20px 5px 20px;
 }

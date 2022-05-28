@@ -1,9 +1,12 @@
 import React from "react";
 import { AppUI } from "./AppUI";
+import { CustomProvider } from "../CustomContext";
 
-function App() {
+function App() {    
     return (
-        <AppUI />
+        <CustomProvider>
+            <AppUI />
+        </CustomProvider>
     );
 }
 

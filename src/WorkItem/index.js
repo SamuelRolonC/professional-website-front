@@ -1,8 +1,13 @@
 import React from "react";
 import "./WorkItem.css";
+import { getTextMonth, getYear } from "../Helpers/convert"
+import { useTranslation } from "react-i18next";
 
 function WorkItem(props) {
     const work = props.work;
+    const { t, i18n } = useTranslation();
+    const startDate = t('months.'+getTextMonth(work.startDate))+" "+getYear(work.startDate);
+    const endDate = t('months.'+getTextMonth(work.endDate))+" "+getYear(work.endDate);
 
     return (
         <div className="WorkItemContainer">
@@ -11,8 +16,8 @@ function WorkItem(props) {
             <p className="WorkItemLocation">{work.company.location}</p>
             <p className="WorkItemDuration">{
                 work.isCurrentJob 
-                ? work.startDate + " - Present"
-                : work.startDate + " - " + work.endDate 
+                ? startDate + " - " + t('work.present')
+                : startDate + " - " + endDate 
             }</p>
             <p className="WorkItemDescription">{work.description}</p>
                             

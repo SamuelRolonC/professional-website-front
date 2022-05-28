@@ -1,9 +1,10 @@
 .AboutMeContainer {
-    background-color: #d6d4d4;
+    background-color: #e6e6e6;
     text-align: left;
     margin: 10px 0;
     overflow: auto;
     padding: 15px 20px;
+    border-radius: 4px;
 }
 
 .AboutMeTitle {

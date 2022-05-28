@@ -1,10 +1,11 @@
 .ProyectItemContainer {
-    background-color: #d6d4d4;
+    background-color: #e6e6e6;
     text-align: left;
     padding: 25px;
     margin: 10px;
     width: 40%;
     display: inline-block;
+    border-radius: 4px;
 }
 
 .ProyectItemTitle {
