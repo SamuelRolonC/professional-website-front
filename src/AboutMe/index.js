@@ -2,6 +2,7 @@ import React from "react";
 import "./AboutMe.css";
 import { CustomIcon } from "../CustomIcon";
 import { CustomContext } from "../CustomContext";
+import { NewLineText } from "../NewLineText";
 
 function AboutMe() {
     // const aboutMeText = "I'm a web developer in a software consultancy company, HS " +
@@ -10,12 +11,12 @@ function AboutMe() {
     //     "Buenos Aires. I keep my learning in an autodidactic way.";
     const { professionalData } = React.useContext(CustomContext);
     const aboutMe = professionalData?.aboutMeViewModel;
-    
+    console.log(aboutMe.text);
     return(
         <div id="aboutme">
             <div className="AboutMeContainer">
                 <h2 className="AboutMeTitle">{aboutMe.title}</h2>
-                <p>{aboutMe.text}</p>
+                <NewLineText text={aboutMe.text} />
             </div>
             <div className="Tools">
                 <CustomIcon type="csharp" />

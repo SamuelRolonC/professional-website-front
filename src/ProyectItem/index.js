@@ -1,5 +1,6 @@
 import React from "react";
 import "./ProyectItem.css";
+import { NewLineText } from "../NewLineText";
 
 function ProyectItem(props) {
     const proyect = props.proyect;
@@ -18,7 +19,7 @@ function ProyectItem(props) {
             <p className="ProyectItemTitle">{proyect.title}</p>
             <img src={getValidImagePath(proyect.imagePath)} alt="proyect"></img>
             <a href={proyect.url} className="ProyectItemUrl">{proyect.url.replace("https://", "")}</a>
-            <p className="ProyectItemDescription">{proyect.description}</p>                            
+            <NewLineText text={proyect.description} />
         </div>
     );
 }
