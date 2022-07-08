@@ -1,0 +1,40 @@
+.Modal {
+    background-color: #f2f2f2;
+    width: 500px;
+    border-radius: 5px;
+    border: 1px solid #999797;
+}
+
+.ModalHeader {
+    display: flex;
+    justify-content: space-between;
+    padding: 7px;
+    background-color: #2f2f2f;
+    color: #f2f2f2;
+}
+
+.ModalHeaderButton {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.ModalAction {
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+}
+
+.ModalActionButton {
+    padding: 5px 10px;
+    color: #f2f2f2;
+    background-color: #2f2f2f;
+    outline: none;
+    border: 0;
+    border-radius: 2px;
+    font-size: 0.9em;
+}
+
+.ModalContent {
+    padding: 12px;
+}

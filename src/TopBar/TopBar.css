@@ -73,3 +73,6 @@
 .TopBarLanguage button:hover {
   color: #2e4ba9;
 }
+.TopBarLanguage .SelectedLanguage {
+  border-bottom: 1px solid #f2f2f2;
+}

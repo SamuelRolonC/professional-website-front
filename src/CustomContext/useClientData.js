@@ -1,19 +1,21 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { useSystemParameters } from "./useSystemParameters";
 
 function useClientData() {
-    const [professionalData, setProfessionalData] = React.useState(null);
-    const [loading, setLoading] = React.useState(true);
-    const [error, setError] = React.useState(false);
+    const [ professionalData, setProfessionalData ] = React.useState(null);
+    const [ loading, setLoading ] = React.useState(true);
+    const [ error, setError ] = React.useState(false);
     const { i18n } = useTranslation();
+    const { getUrlProfessionalData } = useSystemParameters();
 
     React.useEffect(() => {
         async function getData() {
             try {
-                const url = `https://localhost:44342/client/getprofessionaldata?lang=${i18n.resolvedLanguage}`;
-    
+                const url = getUrlProfessionalData(i18n.resolvedLanguage);
+
                 const response = await fetch(url, {
-                    cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+                    cache: 'no-cache',
                     headers: {
                     'Content-Type': 'application/json'
                     },
@@ -21,7 +23,6 @@ function useClientData() {
                 
                 if (response.ok) {
                     const data = await response.json();
-                    console.log(data);
 
                     setProfessionalData(data);
                     setLoading(false);
@@ -35,7 +36,7 @@ function useClientData() {
             }
         };
         getData();
-    }, [loading]);
+    }, [i18n.resolvedLanguage, loading]);
 
     return {
         professionalData,

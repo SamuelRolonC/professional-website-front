@@ -1,4 +1,4 @@
-import { FaLinkedin, FaTwitterSquare } from 'react-icons/fa';
+import { FaLinkedin, FaTwitterSquare, FaRegWindowClose } from 'react-icons/fa';
 import { ReactComponent as CSharpIcon } from './icon-csharp.svg';
 import { ReactComponent as DotNetIcon } from './icon-dotnet.svg';
 import { ReactComponent as JSIcon } from './icon-js.svg';
@@ -6,12 +6,18 @@ import { ReactComponent as GitIcon } from './icon-git.svg';
 import { ReactComponent as OracleIcon } from './icon-oracle.svg';
 
 const iconTypes = {
+    // FontAwesome
     "linkedin": color => (
         <FaLinkedin className="SocialMediaIcon" fill={color} />
     ),
     "twitter": color => (
         <FaTwitterSquare className="SocialMediaIcon" fill={color} />
     ),
+    "close": color => (
+        <FaRegWindowClose className="WindowIcon" fill={color} />
+    ),
+
+    // SVG
     "csharp": color => (
         <CSharpIcon className="ToolIcon" fill={color} />
     ),

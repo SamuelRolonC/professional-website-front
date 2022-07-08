@@ -23,7 +23,7 @@
     width: 100%;
 }
 
-.ContactSectionField input {
+.ContactSectionFieldInput {
     display: block;
     width: 100%;
     margin: 0 auto;
@@ -35,7 +35,7 @@
     box-sizing: border-box;
 }
 
-.ContactSectionField textarea {
+.ContactSectionFieldTextarea {
     display: block;
     width: 100%;
     padding: 5px 10px;
@@ -54,4 +54,8 @@
     border: 0;
     border-radius: 4px;
     font-size: 1em;
+}
+
+.ContactSectionInvalid {
+    border-color: #ab0808;
 }

@@ -33,16 +33,20 @@ i18n
             work: 'Work',
             proyects: 'Proyects',
             contact: 'Contact',
+            blog: 'Blog',
           },
           topbar: {
             english: 'English',
-            spanish: 'Spanish'
+            spanish: 'Spanish',
+            portuguese: 'Portuguese'
           },
           contact: {
             name: 'Name',
             email: 'Email',
+            subject: 'Subject',
             messagePlaceholder: 'Write your message...',
-            send: 'Send'
+            send: 'Send',
+            wrongvalues: 'Please, fill all fields with valid values.'
           },
           months: {
             january: 'January', february: 'February', march: 'March', april: 'April', may: 'May',
@@ -51,6 +55,9 @@ i18n
           },
           work: {
             present: 'Present'
+          },
+          popup: {
+            accept: 'Accept'
           }
         }
       },
@@ -61,14 +68,17 @@ i18n
             work: 'Trabajo',
             proyects: 'Proyectos',
             contact: 'Contacto',
+            blog: 'Blog',
           },
           topbar: {
             english: 'Inglés',
-            spanish: 'Español'
+            spanish: 'Español',
+            portuguese: 'Portugués'
           },
           contact: {
             name: 'Nombre',
             email: 'Correo electrónico',
+            subject: 'Asunto',
             messagePlaceholder: 'Escribí tu mensaje...',
             send: 'Enviar'
           },
@@ -79,7 +89,45 @@ i18n
           },
           work: {
             present: 'Presente'
-          } 
+          },
+          popup: {
+            accept: 'Aceptar'
+          }
+        }
+      },
+      pt: {
+        translation: {
+          section: {
+            aboutMe: 'Sobre mim',
+            work: 'Trabalho',
+            proyects: 'Projetos',
+            contact: 'Contato',
+            blog: 'Blogue',
+          },
+          topbar: {
+            english: 'Inglês',
+            spanish: 'Espanhol',
+            portuguese: 'Português',
+          },
+          contact: {
+            name: 'Nome',
+            email: 'Correio eletrônico',
+            subject: 'Assunto',
+            messagePlaceholder: 'Eu escrevi sua mensagem...',
+            send: 'Mandar',
+            wrongvalues: 'Por favor, preencha todos os campos com valores válidos.'
+          },
+          months: {
+            january: 'Janeiro', february: 'Fevereiro', march: 'Março', april: 'Abril', may: 'Maio',
+            june: 'Junho', july: 'Julho', august: 'Agosto', september: 'Setembro', october: 'Outubro',
+            november: 'Novembro', december: 'Dezembro'
+          },
+          work: {
+            present: 'Presente'
+          },
+          popup: {
+            accept: 'Aceitar'
+          }
         }
       }
     }

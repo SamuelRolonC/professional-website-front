@@ -19,6 +19,7 @@ function TopBar() {
                     <div className="TopBarLanguage">
                         <button onClick={() => i18n.changeLanguage('en')} title={t('topbar.english')}>EN</button>
                         <button onClick={() => i18n.changeLanguage('es')} title={t('topbar.spanish')}>ES</button>
+                        <button onClick={() => i18n.changeLanguage('pt')} title={t('topbar.portuguese')}>PT</button>
                     </div>
                 </div>
                 <div className="TopBarSections">
@@ -26,6 +27,7 @@ function TopBar() {
                     <a href="#work">{t('section.work')}</a>
                     <a href="#proyects">{t('section.proyects')}</a>
                     <a href="#contact">{t('section.contact')}</a>
+                    <a href="#blog">{t('section.blog')}</a>
                 </div>
             </nav>
         </div>
