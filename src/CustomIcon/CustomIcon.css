@@ -12,3 +12,21 @@
     width: 20px;
     height: 20px;
 }
+
+.PopUpContactIcon {
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+.PopUpContactSteps {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.PopUpContactVisual {
+    margin: 5px auto;
+    width: fit-content;
+}

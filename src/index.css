@@ -16,7 +16,7 @@ code {
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
 html {
   scroll-padding-top: 100px;
@@ -34,4 +34,8 @@ input {
 
 textarea {
   font-family: 'Source Sans Pro', sans-serif;
+}
+
+button {
+  font-family: 'Josefin Sans', sans-serif;
 }

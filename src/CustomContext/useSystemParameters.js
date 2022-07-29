@@ -3,6 +3,7 @@ function useSystemParameters() {
 
     // Controllers
     const clientController = '/client';
+    const contactController = '/contact';
 
     // Url generators
     const getUrlProfessionalData = (language) => {
@@ -12,7 +13,7 @@ function useSystemParameters() {
         return url;
     }
     const getUrlPostContact = () => {
-        let url = apiBaseUrl+clientController+'/sendemail';
+        let url = apiBaseUrl+contactController+'/processform';
 
         return url;
     }

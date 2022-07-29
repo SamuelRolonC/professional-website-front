@@ -4,6 +4,8 @@ import { ReactComponent as DotNetIcon } from './icon-dotnet.svg';
 import { ReactComponent as JSIcon } from './icon-js.svg';
 import { ReactComponent as GitIcon } from './icon-git.svg';
 import { ReactComponent as OracleIcon } from './icon-oracle.svg';
+import { SentIcon } from './SentIcon';
+import "./CustomIcon.css";
 
 const iconTypes = {
     // FontAwesome
@@ -15,6 +17,9 @@ const iconTypes = {
     ),
     "close": color => (
         <FaRegWindowClose className="WindowIcon" fill={color} />
+    ),
+    "sent": color => (
+        <SentIcon className="PopUpIcon" fill={color} />
     ),
 
     // SVG

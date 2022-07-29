@@ -7,14 +7,16 @@ function CustomProvider(props) {
     const {
         professionalData,
         loading,
-        error
+        error,
+        getData
     } = useClientData();
 
     return (
         <CustomContext.Provider value={{
             professionalData,
             loading,
-            error
+            error,
+            getData
         }}>
             {props.children}
         </CustomContext.Provider>

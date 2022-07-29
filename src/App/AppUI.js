@@ -7,6 +7,8 @@ import { WorkSection } from "../WorkSection";
 import { ProyectsSection } from '../ProyectsSection';
 import { ContactSection } from '../ContactSection';
 import { CustomContext } from '../CustomContext';
+import { LoadingIndicator } from '../LoadingIndicator';
+import { ErrorIndicator } from '../ErrorIndicator';
 
 function AppUI() {
   const { loading, error } = React.useContext(CustomContext);
@@ -16,12 +18,12 @@ function AppUI() {
       <TopBar />
       {loading && 
         <main className='PrimaryColor'>
-          <p style={{color: 'white'}}>Loading...</p>
+          <LoadingIndicator id="General" />
         </main>
       }
-      {error && 
+      {!loading && error && 
         <main className='PrimaryColor'>
-          <p style={{color: 'white'}}>{error.message}</p>
+          <ErrorIndicator />
         </main>
       }
       {!loading && !error && 

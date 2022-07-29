@@ -16,8 +16,7 @@
     margin: 10px auto;
 }
 
-.ContactSectionField label {
-    display: block;
+.ContactSectionDisplay {
     text-align: left;
     font-size: 1.1em;
     width: 100%;
@@ -58,4 +57,9 @@
 
 .ContactSectionInvalid {
     border-color: #ab0808;
+}
+
+.ContactSectionExample {
+    display: block;
+    font-size: 0.7em;
 }
