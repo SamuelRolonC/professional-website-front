@@ -1,10 +1,9 @@
 import React from "react";
 import "./ProyectItem.css";
 import { NewLineText } from "../NewLineText";
+import { CustomContext } from "../CustomContext";
 
 function ProyectItem(props) {
-    const proyect = props.proyect;
-
     const getValidImagePath = (path) => {
         let finalPath = require("../img/default.png");
 
@@ -16,10 +15,14 @@ function ProyectItem(props) {
 
     return (
         <div className="ProyectItemContainer">
-            <p className="ProyectItemTitle">{proyect.title}</p>
-            <img src={getValidImagePath(proyect.imagePath)} alt="proyect"></img>
-            <a href={proyect.url} className="ProyectItemUrl">{proyect.url.replace("https://", "")}</a>
-            <NewLineText text={proyect.description} />
+            <p className="ProyectItemTitle">{props.proyect.title}</p>
+            <img src={getValidImagePath(props.proyect.imagePath)} alt="proyect"></img>
+            <a 
+                href={props.proyect.url} 
+                className="ProyectItemUrl">
+                    {props.proyect.url.replace("https://", "")}
+            </a>
+            <NewLineText text={props.proyect.description} />
         </div>
     );
 }

@@ -20,13 +20,14 @@ function useClientData() {
                 headers: {
                 'Content-Type': 'application/json'
                 },
-            });                
-            
+            });
+                         
             if (response.ok) {
                 const data = await response.json();
 
                 setProfessionalData(data);
                 setLoading(false);
+                setError("");
             } else {
                 setError("Server error.");
                 setLoading(false);

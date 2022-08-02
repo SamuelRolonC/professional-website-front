@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import './App.css';
 import { AboutMe } from '../AboutMe';
 import { TopBar } from '../TopBar';
@@ -11,29 +11,32 @@ import { LoadingIndicator } from '../LoadingIndicator';
 import { ErrorIndicator } from '../ErrorIndicator';
 
 function AppUI() {
-  const { loading, error } = React.useContext(CustomContext);
-  
+  const { loading, error, viewLayout } = React.useContext(CustomContext);
+
   return (
     <div className='App'>
       <TopBar />
-      {loading && 
-        <main className='PrimaryColor'>
+      <main className='PrimaryColor'>
+        {loading && 
           <LoadingIndicator id="General" />
-        </main>
-      }
-      {!loading && error && 
-        <main className='PrimaryColor'>
+        }
+        {!loading && error && 
           <ErrorIndicator />
-        </main>
-      }
-      {!loading && !error && 
-        <main className='PrimaryColor'>
-          <AboutMe />
-          <WorkSection />
-          <ProyectsSection />
-          <ContactSection />        
-        </main>
-      }
+        }
+        {!loading && !error && viewLayout === 'main' &&
+          <Fragment>
+            <AboutMe />
+            <WorkSection />
+            <ProyectsSection />
+            <ContactSection />        
+          </Fragment>
+        }
+        {!loading && !error && viewLayout === 'blog' &&
+          <Fragment>
+            Blog        
+          </Fragment>
+        }
+      </main>
       <Footer />        
     </div>
   );

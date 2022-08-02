@@ -150,7 +150,7 @@ i18n
             name: 'Nome',
             email: 'Correio eletrônico',
             subject: 'Assunto',
-            messagePlaceholder: 'Eu escrevi sua mensagem...',
+            messagePlaceholder: 'Escreva sua mensagem...',
             send: 'Mandar',
             message: {
               validation: 'Por favor, preencha todos os campos com valores válidos.',

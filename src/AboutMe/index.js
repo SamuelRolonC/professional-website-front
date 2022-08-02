@@ -5,9 +5,19 @@ import { CustomContext } from "../CustomContext";
 import { NewLineText } from "../NewLineText";
 
 function AboutMe() {
-    const { professionalData } = React.useContext(CustomContext);
+    const { 
+        professionalData
+        , currentSection
+        , setCurrentSection
+        , scrollFor 
+    } = React.useContext(CustomContext);
     const aboutMe = professionalData?.aboutMeViewModel;
     
+    React.useEffect(() => {
+        scrollFor('aboutMe', currentSection, setCurrentSection);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
+
     return(
         <div id="aboutme">
             <div className="AboutMeContainer">

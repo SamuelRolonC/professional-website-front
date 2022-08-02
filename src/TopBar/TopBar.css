@@ -5,27 +5,27 @@
 }
 
 .TopBar {
-    /* background-color: #2a2525; */
-    overflow: hidden;
-    padding: 10px;
-    padding-bottom: 0;
+  /* background-color: #2a2525; */
+  overflow: hidden;
+  padding: 10px;
+  padding-bottom: 0;
 }
 
 .TopBar h1 {
-    color: #f2f2f2;
-    margin: 0 auto;
-    width: fit-content;
+  color: #f2f2f2;
+  margin: 0 auto;
+  width: fit-content;
 }
 
 .TopBarHead {
-    position: relative;
+  position: relative;
 }
 
 .TopBarMedia {
-    width: fit-content;
-    position: absolute;
-    top: 0;
-    right: 0;
+  width: fit-content;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .TopBarMedia a {
@@ -40,7 +40,7 @@
   margin: 0 auto;
 }
 
-.TopBarSections a {
+.TopBarSections a, .TopBarSections button {
   float: left;
   color: #f2f2f2;
   text-align: center;
@@ -48,15 +48,19 @@
   text-decoration: none;
   font-size: 1.05em;
 }
-
-.TopBarSections a:hover {
+.TopBarSections button {
+  background-color: transparent;
+  border: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.TopBarSections button:hover {
   color: #2e4ba9;
 }
 
-.TopBarSections a.active {
+/* .TopBarSections a.active {
   background-color: #04AA6D;
   color: white;
-}
+} */
 
 .TopBarLanguage {
   width: fit-content;

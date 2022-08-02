@@ -1,15 +1,23 @@
 import React from "react";
 import "./ProyectsSection.css";
-import { getProyectItems } from "./getProyectItems";
 import { ProyectItem } from "../ProyectItem";
 import { useTranslation } from 'react-i18next';
 import { CustomContext } from "../CustomContext";
 
 function ProyectsSection() {
     const { t } = useTranslation();
-    // const [ proyectItems, error ] = getProyectItems();
-    const { professionalData } = React.useContext(CustomContext);
+    const { 
+        professionalData
+        , currentSection
+        , setCurrentSection
+        , scrollFor
+    } = React.useContext(CustomContext);
     const proyectItems = professionalData?.listProjectViewModel;
+
+    React.useEffect(() => {
+        scrollFor('proyects', currentSection, setCurrentSection);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
 
     return (
         <div id="proyects" className="ProyectsSection">

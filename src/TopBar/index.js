@@ -3,10 +3,24 @@ import "./TopBar.css";
 import { TwitterIcon } from "../CustomIcon/TwitterIcon";
 import { LinkedinIcon } from "../CustomIcon/LinkedinIcon";
 import { useTranslation } from 'react-i18next';
+import { CustomContext } from '../CustomContext';
 
 function TopBar() {
     const { t, i18n } = useTranslation();
+    const { viewLayout, setViewLayout, setCurrentSection } = React.useContext(CustomContext);
 
+    const scrollToSection = (e) => { 
+        const section = e.target.value;
+
+        if (viewLayout === 'main') {
+            document.querySelector('#'+section).scrollIntoView({behavior: 'smooth'});
+            setCurrentSection('');
+        } else {
+            setViewLayout('main');
+            setCurrentSection(section);
+        }
+    }
+    
     return (
         <div className="TopBarContainer PrimaryColor">
             <nav className="TopBar">
@@ -23,11 +37,31 @@ function TopBar() {
                     </div>
                 </div>
                 <div className="TopBarSections">
-                    <a href="#aboutme">{t('section.aboutMe')}</a>
-                    <a href="#work">{t('section.work')}</a>
-                    <a href="#proyects">{t('section.proyects')}</a>
-                    <a href="#contact">{t('section.contact')}</a>
-                    <a href="#blog">{t('section.blog')}</a>
+                    <button
+                        value={'aboutme'}
+                        onClick={e => scrollToSection(e)}>
+                            {t('section.aboutMe')}
+                    </button>
+                    <button
+                        value={'work'}
+                        onClick={e => scrollToSection(e)}>
+                            {t('section.work')}
+                    </button>
+                    <button
+                        value={'proyects'}
+                        onClick={e => scrollToSection(e)}>
+                            {t('section.proyects')}
+                    </button>
+                    <button
+                        value={'contact'}
+                        onClick={e => scrollToSection(e)}>
+                            {t('section.contact')}
+                    </button>
+                    <button 
+                        type="button" 
+                        onClick={() => setViewLayout('blog')}>
+                            {t('section.blog')}
+                    </button>
                 </div>
             </nav>
         </div>

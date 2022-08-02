@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { useSystemParameters } from "../CustomContext/useSystemParameters";
 import { PopUpSimple } from "../PopUpSimple";
 import { LoadingIndicator } from "../LoadingIndicator";
+import { CustomContext } from "../CustomContext";
 
 function ContactSection() {
     const { t } = useTranslation();
@@ -15,6 +16,11 @@ function ContactSection() {
     const [ titlePopUp, setTitlePopUp ] = React.useState("");
     const [ contentPopUp, setContentPopUp ] = React.useState("");
     const [ loadingContact, setLoadingContact ] = React.useState(false);
+    const { 
+        currentSection
+        , setCurrentSection
+        , scrollFor 
+    } = React.useContext(CustomContext);
 
     const onSubmit = (e) => {
         e.preventDefault();
@@ -111,6 +117,11 @@ function ContactSection() {
         setContentPopUp(content);
     }
     
+    React.useEffect(() => {
+        scrollFor('contact', currentSection, setCurrentSection);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
+
     return (
         <div id="contact" className="ContactSection">
             <h2>{t('section.contact')}</h2>
