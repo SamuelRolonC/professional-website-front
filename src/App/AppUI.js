@@ -9,6 +9,7 @@ import { ContactSection } from '../ContactSection';
 import { CustomContext } from '../CustomContext';
 import { LoadingIndicator } from '../LoadingIndicator';
 import { ErrorIndicator } from '../ErrorIndicator';
+import { BlogSection } from '../BlogSection';
 
 function AppUI() {
   const { loading, error, viewLayout } = React.useContext(CustomContext);
@@ -32,9 +33,7 @@ function AppUI() {
           </Fragment>
         }
         {!loading && !error && viewLayout === 'blog' &&
-          <Fragment>
-            Blog        
-          </Fragment>
+          <BlogSection />
         }
       </main>
       <Footer />        

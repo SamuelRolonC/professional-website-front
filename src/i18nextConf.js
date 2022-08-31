@@ -76,6 +76,11 @@ i18n
           pageerror: {
             message: 'There was an error loading the data, please try again.', 
             button: 'Refresh' 
+          },
+          blog: {
+            pinned: 'Pinned posts',
+            latest: 'Latest posts',
+            refresh: 'Refresh'
           }
         }
       },
@@ -129,6 +134,11 @@ i18n
           pageerror: {
             message: 'Hubo un error al cargar los datos, por favor intente nuevamente.',
             button: 'Recargar'
+          },
+          blog: {
+            pinned: 'Publicaciones fijadas',
+            latest: 'Últimas publicaciones',
+            refresh: 'Recargar'
           }
         }
       },
@@ -177,6 +187,11 @@ i18n
           pageerror: {
             message: 'Ocorreu um erro ao carregar os dados, tente novamente.',
             button: 'Recarregar'
+          },
+          blog: {
+            pinned: 'Postagens fixadas',
+            latest: 'Últimas postagens',
+            refresh: 'Recarregar'
           }
         }
       }

@@ -1,0 +1,36 @@
+.BlogSectionPinnedContainer, 
+.BlogSectionLatestContainer {
+/* background-color: #e6e6e6; */
+    background-color: #c2c2c2;
+    padding: 10px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+.BlogSectionPinnedContainer {
+    margin-top: 0;
+}
+
+.BlogSectionLatestContainer {
+    background-color: transparent;
+}
+
+.BlogSectionPinnedSpan {
+    display: block;
+    text-align: left;
+}
+
+.BlogSectionLatestSpan {
+    display: block;
+    color: #f2f2f2;
+    font-size: 1.2em;
+}
+
+.BlogSectionRefresh {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 0;
+    background-color: #1264BD;
+    border-radius: 3px;
+    font-size: 1em;
+}

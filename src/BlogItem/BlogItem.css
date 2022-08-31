@@ -1,0 +1,30 @@
+.BlogItem {
+    background-color: #e6e6e6;
+    width: 44%;
+    margin: 5px auto;
+    padding: 1px 15px;
+    border-radius: 2px;
+}
+
+.BlogItemTitle {
+    margin: 5px 0;
+    text-align: left;
+    font-size: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.BlogItemDescription, .BlogItemDate {
+    margin: 5px 0;
+    text-align: left;
+    color: #20224a;
+}
+.BlogItemDescription {
+    font-size: 0.85em;
+    overflow: hidden;
+    line-height: 1em;
+    height: 2.1em;
+}
+.BlogItemDate {
+    font-size: 0.75em;    
+}
