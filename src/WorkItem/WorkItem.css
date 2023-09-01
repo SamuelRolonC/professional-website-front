@@ -1,0 +1,28 @@
+.WorkItemContainer {
+    background-color: #e6e6e6;
+    text-align: left;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+
+.WorkItemTitle {
+    color: black;
+    font-size: 1.3em;
+    display: inline-block;
+    margin: 0;
+}
+
+.WorkItemUrl {
+    text-decoration: none;
+    color: black;
+}
+.WorkItemUrl:hover {
+    color: blue;
+}
+
+.WorkItemLocation,
+.WorkItemDuration {
+    margin: 5px 0;
+    font-size: 0.8em;
+}

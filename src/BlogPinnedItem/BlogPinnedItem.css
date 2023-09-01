@@ -1,0 +1,31 @@
+.BlogPinnedItem {
+    background-color: #e6e6e6;
+    width: 44%;
+    display: inline-block;
+    margin: 5px;
+    padding: 0 15px;
+    border-radius: 2px;
+}
+
+.BlogPinnedItemTitle {
+    margin: 5px 0;
+    text-align: left;
+    font-size: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.BlogPinnedItemDescription, .BlogPinnedItemDate {
+    margin: 5px 0;
+    text-align: left;
+    color: #20224a;
+}
+.BlogPinnedItemDescription {
+    font-size: 0.85em;
+    overflow: hidden;
+    line-height: 1em;
+    height: 2.1em;
+}
+.BlogPinnedItemDate {
+    font-size: 0.75em;    
+}

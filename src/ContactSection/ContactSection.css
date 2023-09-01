@@ -1,0 +1,65 @@
+.ContactSection h2 {
+    color: #f2f2f2;
+}
+
+.ContactSectionContainer {
+    background-color: #e6e6e6;
+    width: 60%;
+    height: fit-content;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.ContactSectionField {
+    width: 70%;
+    margin: 10px auto;
+}
+
+.ContactSectionDisplay {
+    text-align: left;
+    font-size: 1.1em;
+    width: 100%;
+}
+
+.ContactSectionFieldInput {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid #969696;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 1em;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.ContactSectionFieldTextarea {
+    display: block;
+    width: 100%;
+    padding: 5px 10px;
+    border: 1px solid #969696;
+    border-radius: 4px;
+    font-size: 1em;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.ContactSectionContainer button {
+    padding: 5px 10px;
+    color: #f2f2f2;
+    background-color: #2f2f2f;
+    outline: none;
+    border: 0;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.ContactSectionInvalid {
+    border-color: #ab0808;
+}
+
+.ContactSectionExample {
+    display: block;
+    font-size: 0.7em;
+}
